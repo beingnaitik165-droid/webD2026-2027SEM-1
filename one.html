@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      font-size: 11px;
+    }
+    .header-table, .timetable, .legend-table, .footer-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+    }
+    .header-table td {
+      border: none;
+      padding: 2px 4px;
+    }
+    .timetable th, .timetable td, .legend-table th, .legend-table td {
+      border: 1px solid #333;
+      text-align: center;
+      padding: 4px;
+      vertical-align: middle;
+    }
+    .timetable th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+    
+    /* Subject Color Codes */
+    .c-green  { background-color: #9cdb7d; }  /* 25AS101 / 25AS151 */
+    .c-orange { background-color: #f5a938; }  /* 25AS102 */
+    .c-teal   { background-color: #00aa6c; color: #fff; } /* 25AS103 */
+    .c-cyan   { background-color: #00b4f0; color: #000; } /* 25EL101 / 25EL151 */
+    .c-yellow { background-color: #ffff00; }  /* 25AI101 */
+    .c-salmon { background-color: #e57d59; }  /* 25ME152 */
+    .c-cream  { background-color: #fcf6e8; }  /* 25CS101 / 25VA151 */
+    .lunch    { font-weight: bold; letter-spacing: 2px; }
+
+    .sub-code { font-weight: bold; }
+    .faculty  { font-size: 10px; }
+    .room     { font-size: 9.5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <table class="header-table">
+    <tr>
+      <td style="width: 25%;"></td>
+      <td style="text-align: center;">
+        <h2 style="margin: 0; font-size: 16px;">ABES Engineering College, Ghaziabad</h2>
+        <h3 style="margin: 2px 0; font-size: 14px;">Class Time Table</h3>
+        <div>Department: Applied Sciences & Humanities</div>
+      </td>
+      <td style="width: 25%; text-align: right; vertical-align: top;">
+        <b>TM-07</b><br>
+        w.e.f : 11.09.2026<br>
+        Session 2026-27, ODD Semester
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <b>Course:</b> B.Tech &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Semester / Section:</b> I / ELCE-1 &nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Class Room No:</b> BH-308
+      </td>
+    </tr>
+  </table>
+
+  <!-- Main Timetable Grid -->
+  <table class="timetable">
+    <tr>
+      <th rowspan="2">Time &rarr;<br>Day &darr;</th>
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+      <th>IV</th>
+      <th rowspan="2" style="width: 35px;">V<br>12:20-1:10</th>
+      <th>VI</th>
+      <th>VII</th>
+      <th>VIII</th>
+      <th>IX</th>
+    </tr>
+    <tr>
+      <th>08:50-09:40</th>
+      <th>09:40-10:30</th>
+      <th>10:40-11:30</th>
+      <th>11:30-12:20</th>
+      <th>01:10-02:00</th>
+      <th>02:00-02:50</th>
+      <th>02:50-03:40</th>
+      <th>03:40-04:30</th>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+      <th>Monday</th>
+      <td colspan="2" class="c-green">
+        <span class="sub-code">25AS151</span><br><span class="faculty">(AG, RSA)</span><br><span class="room">KC Block III Floor (KC-310)</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-green">
+        <span class="sub-code">25AS101</span><br><span class="faculty">(AG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td rowspan="5" class="lunch">L<br>U<br>N<br>C<br>H</td>
+      <td class="c-cream">
+        <span class="sub-code">25CS101</span><br><span class="faculty">(ABS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM, SY)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cyan">
+        <span class="sub-code">25EL101</span><br><span class="faculty">(IR)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cream">
+        <span class="sub-code">25VA101</span><br><span class="faculty">(DDH)</span><br><span class="room">BH-308</span>
+      </td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+      <th>Tuesday</th>
+      <td class="c-cyan">
+        <span class="sub-code">25EL101</span><br><span class="faculty">(IR)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-teal">
+        <span class="sub-code">25AS103</span><br><span class="faculty">(MG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-green">
+        <span class="sub-code">25AS101</span><br><span class="faculty">(AG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cream">
+        <span class="sub-code">25CS101</span><br><span class="faculty">(ABS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td colspan="2" class="c-salmon">
+        <span class="sub-code">25ME152</span> (DAS)<br><span class="room">Block I Floor (RJ-109)</span>
+      </td>
+    </tr>
+
+    <!-- Wednesday -->
+    <tr>
+      <th>Wednesday</th>
+      <td class="c-green">
+        <span class="sub-code">25AS101</span><br><span class="faculty">(AG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cyan">
+        <span class="sub-code">25EL101</span><br><span class="faculty">(IR)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-yellow">
+        <span class="sub-code">25AI101</span><br><span class="faculty">(PPS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td colspan="2">
+        <span class="sub-code">25CS151</span> (ABS) Group-1, KCLG08<br>
+        <hr style="margin:2px 0;">
+        <span class="sub-code">25CS151</span> Group-2, KCLG09
+      </td>
+      <td colspan="2">
+        <b>Mentor-Mentee</b><br><span class="faculty">(AG, PM, DDH)</span><br><span class="room">KCLG-08 &amp; KCLG09</span>
+      </td>
+    </tr>
+
+    <!-- Thursday -->
+    <tr>
+      <th>Thursday</th>
+      <td class="c-yellow">
+        <span class="sub-code">25AI101</span><br><span class="faculty">(PPS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cyan">
+        <span class="sub-code">25EL101</span><br><span class="faculty">(IR)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-teal">
+        <span class="sub-code">25AS103</span><br><span class="faculty">(MG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cream">
+        <span class="sub-code">25CS101</span><br><span class="faculty">(ABS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-green">
+        <span class="sub-code">25AS101</span><br><span class="faculty">(AG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td colspan="2" class="c-cyan">
+        <span class="sub-code">25EL151</span><br><span class="faculty">(IR, DSM)</span><br><span class="room">RJ-Basement</span>
+      </td>
+    </tr>
+
+    <!-- Friday -->
+    <tr>
+      <th>Friday</th>
+      <td class="c-cream">
+        <span class="sub-code">25CS101</span><br><span class="faculty">(ABS)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-orange">
+        <span class="sub-code">25AS102</span><br><span class="faculty">(PM)</span><br><span class="room">BH-308</span>
+      </td>
+      <td colspan="2">
+        <span class="sub-code">25VA151</span> (DDH) Group-1, KCLG-08<br>
+        <hr style="margin:2px 0;">
+        <span class="sub-code">25VA151</span> (SPR) Group-2, KCLG-09
+      </td>
+      <td class="c-teal">
+        <span class="sub-code">25AS103</span><br><span class="faculty">(MG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-green">
+        <span class="sub-code">25AS101</span><br><span class="faculty">(AG)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-cyan">
+        <span class="sub-code">25EL101</span><br><span class="faculty">(IR)</span><br><span class="room">BH-308</span>
+      </td>
+      <td class="c-yellow">
+        <span class="sub-code">25AI101</span><br><span class="faculty">(PPS)</span><br><span class="room">BH-308</span>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Legend / Subject Key -->
+  <table class="legend-table">
+    <tr style="font-weight: bold; background: #eee;">
+      <td>SUBCODE</td><td>SUBNAME</td><td>FACULTY(Abbr.)</td>
+      <td>LABCODE</td><td>LAB NAME</td><td>FACULTY(Abbr.)</td>
+    </tr>
+    <tr class="c-green">
+      <td>25AS101</td><td>Applied Physics</td><td>Dr. Anubha Gupta (AG)</td>
+      <td>25CS151</td><td>Programming in C++ Lab</td><td>Mr. Abhishek Shukla (ABS)</td>
+    </tr>
+    <tr class="c-cyan">
+      <td>25EL101</td><td>Basics of Electrical Engg.</td><td>Ms. Isha Rajput (IR)</td>
+      <td>25AS151</td><td>Physics Lab</td><td>Dr. Anubha Gupta (AG) / Dr. Ritu Sharma (RSA)</td>
+    </tr>
+    <tr class="c-orange">
+      <td>25AS102</td><td>Fundamentals of Linear Algebra and Statistics</td><td>Dr. Priti Madan (PM)</td>
+      <td>25EL151</td><td>Basic Electrical Engg. Lab</td><td>Ms. Isha Rajput (IR) / Dr. Saibal Manna (DSM)</td>
+    </tr>
+    <tr class="c-cream">
+      <td>25CS101</td><td>Programming in C++</td><td>Mr. Abhishek Shukla (ABS)</td>
+      <td class="c-salmon">25ME152</td><td class="c-salmon">CAD Lab</td><td class="c-salmon">Dr. Tanvi Saxena (DTS) / Dr. Abhishek Saxena (DAS)</td>
+    </tr>
+    <tr class="c-teal">
+      <td>25AS103</td><td>Environment &amp; Sustainability</td><td>Dr. Mamta Gautam (MG)</td>
+      <td class="c-cream">25VA151</td><td class="c-cream">Web Designing Workshop I</td><td class="c-cream">Dr. Deepti Deshmukh (DDH) / Ms. Shanu Priya Chauhan (SPR)</td>
+    </tr>
+    <tr class="c-yellow">
+      <td>25AI101</td><td>Essentials of AI</td><td>Mr. Pankaj Pratap Singh (PPS)</td>
+      <td colspan="2" style="background:#fff;">Mentor-Mentee</td>
+      <td style="background:#fff;">Dr. Anubha Gupta (AG) / Dr. Priti Madan (PM) / Dr. Deepti Deshmukh (DDH)</td>
+    </tr>
+  </table>
+
+  <!-- Bottom Signatures -->
+  <table class="header-table" style="margin-top: 20px;">
+    <tr>
+      <td>
+        <b>Academic Program Coordinator :</b> Dr. Vivek Saxena<br><br>
+        <b>Class Mentor-1:</b> Dr. Anubha Gupta (AG)<br>
+        <b>Class Mentor-2:</b> Dr. Priti Madan (PM)<br>
+        <b>Class Mentor-3:</b> Dr. Deepti Deshmukh (DDH)
+      </td>
+      <td style="text-align: center; vertical-align: bottom;">
+        <b>Time Table I/C</b><br>
+        Dr. Nimisha &amp; Dr. Vikash Singh
+      </td>
+      <td style="text-align: right; vertical-align: bottom;">
+        <b>HOD</b><br>
+        Dr. Jaya Singh
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
